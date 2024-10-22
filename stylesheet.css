@@ -696,3 +696,92 @@ body
         opacity: 1;
     }
 } 
+
+/* Mobile Styling */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .home-content {
+        padding: 20px;
+    }
+
+    .home-content h1, .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .about, .services, .contact {
+        padding: 20px;
+    }
+
+    .about-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .services .container {
+        padding: 20px;
+    }
+
+    .services-list div {
+        margin-bottom: 20px;
+    }
+
+    .container1 .Technical-bars .bar,
+    .container1 .redial-bars .redial-bar {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .contact-text h2 {
+        font-size: 24px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet Styling */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .about-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
