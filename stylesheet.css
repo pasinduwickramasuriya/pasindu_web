@@ -698,7 +698,7 @@ body
 } 
 
 /* Mobile Styling */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     header {
         padding: 10px 20px;
         flex-direction: column;
@@ -755,9 +755,9 @@ body
         margin-bottom: 10px;
     }
 }
-
+ */
 /* Tablet Styling */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
     header {
         padding: 20px 30px;
     }
@@ -783,5 +783,5 @@ body
     .services-list {
         display: grid;
         grid-template-columns: 1fr;
-    }
+    } */
 }
