@@ -800,11 +800,17 @@ body
         justify-content: left;
         margin-left: -5vh;
         right: -100vh;
+        max-width: 450px;
+        height: 450px;
      }
         .services{
 
             justify-content: left;
         }
+
+        .services-list {
+            justify-content: center;
+        }  
 
     .home-content h1 {
         font-size: 30px;
