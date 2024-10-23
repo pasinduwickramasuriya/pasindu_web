@@ -99,11 +99,16 @@ body
     animation-delay: 1s;
 }
 .home-content h4 {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
     font-size: 13px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
-
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
@@ -118,7 +123,7 @@ body
 
 .home-sci a {        /*  home icons   */
     display: inline-flex;
-    justify-content: center;
+    justify-content: center ;
     align-items: center;
     width: 40px;
     height: 40px;
@@ -161,7 +166,7 @@ body
    box-shadow: 0 0 5px cyan,
    0 0 25px cyan, 0 0 50px cyan,
    0 0 100px cyan, 0 0 200px cyan
-}
+}                                            /*section 2 start*/
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -195,13 +200,13 @@ body
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-
+                                       /*section 3 start*/
 #services{
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
-}
+}                                    /*section 3*/
 .sub-title{
     text-align: center;
     font-size: 60px;
@@ -298,7 +303,7 @@ body
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
-}
+}                                       /*barrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 .bar{
     font-size: 30px;
 }
@@ -406,7 +411,7 @@ body
         opacity: 1;
     }
 }
-.redial-bars {
+.redial-bars {          /*//////////////////////////////////////////////////////////////////////////////*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -495,7 +500,7 @@ body
     font-weight: 500;
     animation: ShowText 0.5s 1s linear forwards;
     opacity: 0;
-}
+}                                              /*//////////////rectangle///////////////////////////////////*/
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -614,12 +619,15 @@ body
 .last-text p {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10%;
     background: rgb(7, 85,91);
     font-weight: 300;
     margin-top: 70px;
-
+    
 }
+
+
+
 .top {
     position: fixed;
     bottom: 2.1rem; /* Corrected */
@@ -697,82 +705,16 @@ body
     }
 } 
 
-/* Mobile Styling */
-/* @media only screen and (max-width: 768px) {
-    header {
-        padding: 10px 20px;
-        flex-direction: column;
-    }
+/* Default styles (for larger screens above 1400px) */
 
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .home-content {
-        padding: 20px;
-    }
-
-    .home-content h1, .home-content h3 {
-        font-size: 20px;
-    }
-
-    .home-content p {
-        font-size: 14px;
-    }
-
-    .about, .services, .contact {
-        padding: 20px;
-    }
-
-    .about-img img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .services .container {
-        padding: 20px;
-    }
-
-    .services-list div {
-        margin-bottom: 20px;
-    }
-
-    .container1 .Technical-bars .bar,
-    .container1 .redial-bars .redial-bar {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .contact-text h2 {
-        font-size: 24px;
-    }
-
-    .contact-form input, .contact-form textarea {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
- */
-/* Tablet Styling */
-/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    header {
-        padding: 20px 30px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
+/* Media queries for screens between 1400px and 1200px */
+@media screen and (max-width: 1400px) {
     .home-content h1 {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .home-content h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .about-img img {
@@ -780,8 +722,130 @@ body
         height: 180px;
     }
 
-    .services-list {
-        display: grid;
-        grid-template-columns: 1fr;
-    } */
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .services .services-list div {
+        width: 30%;
+        margin: 20px;
+    }
+
+    .skills .bar .info {
+        font-size: 14px;
+    }
+}
+
+/* Media queries for screens between 1200px and 600px */
+@media screen and (max-width: 1200px) {
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .container1{
+       justify-content: left;
+       margin-left: -5vh;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .about-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .services .services-list div {
+        width: 45%;
+        margin: 15px;
+    }
+
+    .skills .bar .info {
+        font-size: 13px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Media queries for screens 600px and below */
+@media screen and (max-width: 600px) {
+    header .logo {
+        font-size: 24px;
+    }
+
+    .contact-form{
+       
+        width: 100px;
+        height: 100px;
+        flex-direction: column;
+        right: 10vh;
+        bottom: 15vh;
+        
+        
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content h3 {
+        font-size: 16px;
+    }
+
+    .about-img  {
+        width: 60px;
+        height: 120px;
+       bottom: 1000px;
+       right: 20vh;
+
+       
+    }
+    .about-text{
+        justify-content: center;
+    }
+
+    .about-text p {
+        font-size: 12px;
+        justify-content: center;
+    }
+    .about-text  {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .services .services-list div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .skills .bar .info {
+        font-size: 12px;
+    }
+
+    .contact-text h4 {
+        font-size: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    footer .last-text p {
+        font-size: 12px;
+    }
 }
