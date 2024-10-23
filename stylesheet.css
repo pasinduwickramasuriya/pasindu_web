@@ -797,9 +797,14 @@ body
         
     }
     .container1{
-       justify-content: left;
-       margin-left: -5vh;
-    }
+        justify-content: left;
+        margin-left: -5vh;
+        right: -100vh;
+     }
+        .services{
+
+            justify-content: left;
+        }
 
     .home-content h1 {
         font-size: 30px;
