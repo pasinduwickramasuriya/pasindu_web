@@ -785,6 +785,14 @@ body
     header .logo {
         font-size: 24px;
     }
+    .top{
+        margin-right: 19px;
+    }
+
+    .btn-box{
+        width: 50px;
+        height: 25px;
+    }
 
     .contact-form{
        
