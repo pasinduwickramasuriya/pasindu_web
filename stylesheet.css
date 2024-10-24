@@ -786,7 +786,7 @@ body
         font-size: 24px;
     }
     .top{
-        margin-right: 19px;
+        margin-right: 40px;
     }
 
     .btn-box{
@@ -874,8 +874,14 @@ body
     .last-text{
         /* width: auto; */
         /* height: auto; */
-        justify-content: center;
+        justify-content: left;
         width: 50vh;
-        margin: 0 1rem;
+        margin: 0 0rem;
+    }
+    .contact-text{
+        width: auto;
+        height: auto;
+        justify-content: left;
+        margin-right: 1rem;
     }
 }
