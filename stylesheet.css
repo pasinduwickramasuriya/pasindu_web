@@ -871,4 +871,11 @@ body
     footer .last-text p {
         font-size: 12px;
     }
+    .last-text{
+        /* width: auto; */
+        /* height: auto; */
+        justify-content: center;
+        width: 50vh;
+        margin: 0 1rem;
+    }
 }
