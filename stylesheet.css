@@ -284,10 +284,11 @@ body
     
 }
 .container1{
-    width: 600px;
+    width: 500px;
     height: 500px;
     padding: 75px 90px;
     margin-left: 120px;
+    margin-bottom: 5rem;
   /*float: left;  
     width: 40%;*/
     
@@ -617,8 +618,8 @@ body
   
 }
 .last-text p {
-    width: 100%;
-    text-align: center;
+    width: auto;
+    text-align: center;                   /* footerrrrrrrrrrrrrrrrrrrrrrrrrrr */
     padding: 20px 10%;
     background: rgb(7, 85,91);
     font-weight: 300;
@@ -782,6 +783,14 @@ body
 
 /* Media queries for screens 600px and below */
 @media screen and (max-width: 600px) {
+    .home-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: block;
+        width: auto;
+        height: auto;
+        margin-left: 4rem;
+    }
     header .logo {
         font-size: 24px;
     }
@@ -811,6 +820,12 @@ body
         max-width: 450px;
         height: 450px;
      }
+     .container1.skills{
+        
+        
+        margin-right: 5rem;
+        margin-top: 1REM;
+     }
         .services{
 
             justify-content: left;
@@ -818,6 +833,7 @@ body
 
         .services-list {
             justify-content: center;
+            margin-left: 2.5rem;
         }  
 
     .home-content h1 {
@@ -833,20 +849,28 @@ body
         height: 120px;
        bottom: 1000px;
        right: 20vh;
+       margin-right: 0;
+       justify-content: center;
 
        
     }
-    .about-text{
+    .about{
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .about-text p {
         font-size: 12px;
+        width: auto;
+        height: auto;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .about-text  {
         font-size: 12px;
         justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 3rem;
     }
 
     .services .services-list div {
@@ -867,6 +891,15 @@ body
         width: 100%;
         font-size: 12px;
     }
+    footer{
+        justify-content: center;
+    }
+    .last-text p {
+        width: 350px;
+        /* justify-content: center; */
+        
+        
+    }
 
     footer .last-text p {
         font-size: 12px;
@@ -881,7 +914,7 @@ body
     .contact-text{
         width: auto;
         height: auto;
-        justify-content: left;
-        margin-right: 1rem;
+        justify-content: center;
+        margin-left: 1rem;
     }
 }
